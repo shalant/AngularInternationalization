@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'playgrond';
+
+  // constructor(private titleService: Title) {
+  //   this.titleService.setTitle($localize`${this.title}`);
+  // }
 }

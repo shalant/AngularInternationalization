@@ -4,6 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "playgrond": {
+      "i18n":{
+        "sourceLocale": "en-US",
+        "locales": {
+          "sr": {
+            "translation": "src/locale/messages.sr.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +22,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            
             "outputPath": "dist/playgrond",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -52,6 +62,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "sr": {
+              "localize": ["sr"]
             }
           },
           "defaultConfiguration": "production"
@@ -64,6 +77,9 @@
             },
             "development": {
               "browserTarget": "playgrond:build:development"
+            },
+            "sr": {
+              "browserTarget": "playgrond:build:sr"
             }
           },
           "defaultConfiguration": "development"

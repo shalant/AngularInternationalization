@@ -1,16 +1,30 @@
+<h1 i18n>This is multilingual application</h1>
+<p i18n>I hope you like it</p>
 <main>
   <section class="image-container">
     <img src="" alt="" class="hero-image">
   </section>
   <section class="shipping-details">
-    <h2>Your order is on its way!</h2>
-    <p>Thank you for shopping with us and your order has been processed.</p>
+    <h2 i18n>Your order is on its way!</h2>
+    <p i18n>Thank you for shopping with us and your order has been processed.</p>
     <table>
       <tr>
-        <th>Item</th>
-        <th>Qty</th>
-        <th>Date</th>
-        <th>Amount</th>
+        <th i18n>Item</th>
+        <th i18n>Qty</th>
+        <th i18n>Date</th>
+        <th i18n>Amount</th>
+      </tr>
+      <tr>
+        <td>Big</td>
+        <td>1</td>
+        <td>{{05/09/2022 | date}}</td>
+        <td>{{129 | currency}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td i18n class="total-amount-label">Total Amount</td>
+        <td class="total-amount">{{129 | currency}}</td>
       </tr>
     </table>
   </section>
